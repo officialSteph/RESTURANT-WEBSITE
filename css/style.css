@@ -47,6 +47,8 @@ body{
   background: var(--primary-color);
 }
 
+/* Navbar */
+
 .navbar{
   position: fixed;
   top: 0;
@@ -61,10 +63,81 @@ body{
 }
 
 .logo{
-  height: 3.5rem;
+  height: 3.0rem;
 }
 
+.links-container{
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 7.5%;
+}
 
+.links{
+  color: var(--primary-text-color);
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: .5rem 1rem;
+  transform: 2s;
+}
+
+.links:hover {
+  color: var(--secondary-text-color);
+}
+
+.nav-extras{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 1rem;
+}
+
+.Search{
+  position: relative;
+  width: 20vw;
+  min-width: 150px;
+  height: 2.5rem;
+  border-radius: 5rem;
+  overflow: hidden;
+}
+
+.search-box{
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  border: none;
+  padding: 1rem;
+  outline: none;
+  font-size: .9rem;
+}
+
+.search-btn{
+  position: absolute;
+  border: none;
+  right: 0;
+  width: 3rem;
+  height: 100%;
+  background: var(--primary-color);
+  text-align: center;
+  cursor: pointer;
+  color: var(--secondary-text-color);
+}
+
+.cart{
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--secondary-text-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.cart:hover{
+  background: var(--secondary-color);
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
